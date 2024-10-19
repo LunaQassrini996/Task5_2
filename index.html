@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+   <div class="container">
+       <div class="feild_1"> 
+        <label for="from">From:</label>
+        <select class="option_group" id="fromUnit">
+            <option value="Millimeter">Millimeter</option>
+            <option value="Centimeter">Centimeter</option>
+            <option value="Decimeter" >Decimeter</option>
+            <option value="Meter">Meter</option>
+            <option value="Kilometer">Kilometer</option>
+        </select>
+        <input  id="from" type="number" placeholder="Input length" min="0"/>
+      </div>
+      <div class="feild_2">
+        <label for="toLength">To:</label>
+        <select class="option_group1" id="toUnit">
+            <option value="Millimeter">Millimeter</option>
+            <option value="Centimeter">Centimeter</option>
+            <option value="Decimeter">Decimeter</option>
+            <option value="Meter">Meter</option>
+            <option value="Kilometer">Kilometer</option>
+        </select>
+        <input id="toLength" type="number" placeholder="convert result" readonly />
+      </div> 
+      <div class="buttons">
+        <button onclick="Reset()" id="color">Reset</button>
+        <button onclick="calculate()" > Calculate</button>
+      </div>
+   </div> 
+   <script src="./assets/js/script.js"></script>
+</body>
+</html>
